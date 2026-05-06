@@ -175,16 +175,53 @@ const Index = () => {
             </span>
           </div>
 
-          <h1
-            className="animate-fade-up-delay-1 font-display font-bold uppercase leading-none mb-6"
-            style={{
-              fontSize: "clamp(3.5rem, 12vw, 10rem)",
-              color: "var(--sand)",
-              letterSpacing: "-0.01em",
-            }}
-          >
-            ССО
-          </h1>
+          <div className="animate-fade-up-delay-1 flex items-end gap-8 mb-6">
+            <h1
+              className="font-display font-bold uppercase leading-none"
+              style={{
+                fontSize: "clamp(3.5rem, 12vw, 10rem)",
+                color: "var(--sand)",
+                letterSpacing: "-0.01em",
+              }}
+            >
+              ССО
+            </h1>
+            {/* Шеврон с коброй */}
+            <div
+              className="flex-shrink-0 mb-2 md:mb-4"
+              style={{
+                filter: "drop-shadow(0 0 18px rgba(107,122,58,0.5))",
+              }}
+            >
+              <div
+                className="relative overflow-hidden"
+                style={{
+                  width: "clamp(80px, 10vw, 140px)",
+                  height: "clamp(80px, 10vw, 140px)",
+                  clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
+                  border: "2px solid var(--olive)",
+                }}
+              >
+                <img
+                  src="https://cdn.poehali.dev/projects/810a27fe-8b3b-4e59-ad4d-8c9e370bc848/files/d27bf5f1-91b4-4ae0-9b98-17163d87c4bf.jpg"
+                  alt="Шеврон ССО — кобра"
+                  className="w-full h-full object-cover"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(107,122,58,0.15) 0%, transparent 60%)",
+                  }}
+                />
+              </div>
+              <div
+                className="text-center font-display text-xs tracking-widest uppercase mt-2"
+                style={{ color: "var(--olive-light)", opacity: 0.7 }}
+              >
+                ССО
+              </div>
+            </div>
+          </div>
 
           <div
             className="animate-fade-up-delay-2 h-px mb-6"
